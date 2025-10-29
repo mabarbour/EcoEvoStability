@@ -22,7 +22,7 @@
 
 `fungus_present` - Presence/absence (1/0) of a fungus (*Mucor* sp.) associated with aphid mummies or presumably dead aphids. Fungus in this genus are commonly found in soils and associated with insect carcasses, and not known to be entomopathogens. Despite its presence late in the experiment, preliminary analyses suggested it was unimportant in influencing ecological or evolutionary dynamics. This data was not used in the analyses for the manuscript "Empirically measuring eco-evolutionary stability".
 
-`plants_no_growth` - Qualitative indicator of whether plants had normal growth (0) or were unusually small (1) during aphid sampling.
+`plants_no_growth` - Qualitative indicator of whether plants were of normal size (0) or appeared to be clearly below average in size (1) relative to other plants observed during aphid sampling. This data was not used in the analyses for the manuscript "Empirically measuring eco-evolutionary stability".
 
 `spider_contam` - Number of spiders observed in cage. These individuals were recorded and removed immediately.
 
