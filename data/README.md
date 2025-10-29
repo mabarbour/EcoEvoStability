@@ -20,7 +20,7 @@
 
 `aphids_per_click` - Multiplier to accurately determine aphid abundances. A value of 1 means each counter 'click' corresponds to 1 aphid individual, whereas a value of 5 means each counter 'click' corresponds to 5 aphid individuals.
 
-`fungus_present` - Presence/absence (1/0) of a entomopathogen of the aphids. Despite its presence late in the experiment, preliminary analyses suggested it was unimportant in influencing ecological or evolutionary dynamics. This data was not used in the analyses for the manuscript "Empirically measuring eco-evolutionary stability".
+`fungus_present` - Presence/absence (1/0) of a fungus (*Mucor* sp.) associated with aphid mummies or presumably dead aphids. Fungus in this genus are commonly found in soils and associated with insect carcasses, and not known to be entomopathogens. Despite its presence late in the experiment, preliminary analyses suggested it was unimportant in influencing ecological or evolutionary dynamics. This data was not used in the analyses for the manuscript "Empirically measuring eco-evolutionary stability".
 
 `plants_no_growth` - Qualitative indicator of whether plants had normal growth (0) or were unusually small (1) during aphid sampling.
 
