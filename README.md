@@ -2,7 +2,7 @@
 
 This repository contains the data and code to reproduce the analyses reported in the manuscript "Empirically measuring eco-evolutionary stability".
 
-[![](https://zenodo.org/badge/1071381307.svg)](https://doi.org/10.5281/zenodo.17473515)
+[![](https://zenodo.org/badge/1071381307.svg)](https://doi.org/10.5281/zenodo.21497191)
 
 ## Repository contents:
 
