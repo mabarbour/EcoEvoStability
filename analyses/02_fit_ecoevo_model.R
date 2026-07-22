@@ -111,27 +111,27 @@ car::vif(lm(Rt1 ~ plants_no_growth + lnAt + Rt + Yt + lnPt,
 # multivariate formula
 MAR1_model <- 
   # aphid ecological dynamics
-  bf(lnAt1|subset(Aphids_sub) ~ #mi(se_lnAt) + subset(Aphids_sub) + index(ind) ~  
+  bf(lnAt1|subset(Aphids_sub) ~ 
        0 + Intercept + mi(lnAt, idx=ind) + mi(Rt, idx=ind) + mi(Yt, idx=ind) +
        ptoid_in + ptoid_in:(mi(lnAt, idx=ind) + mi(lnPt, idx=ind) + mi(Rt, idx=ind) + mi(Yt, idx=ind)) + 
-       plants_no_growth + #EGN_sine +
+       plants_no_growth + 
        (1|i|ID)) +
   # parasitoid ecological dynamics
-  bf(lnPt1|subset(Ptoids_sub) ~ #mi(se_lnPt) + subset(Ptoids_sub) + index(ind) ~  
+  bf(lnPt1|subset(Ptoids_sub) ~   
        0 + Intercept + mi(lnAt, idx=ind) + mi(lnPt, idx=ind) + mi(Rt, idx=ind) + mi(Yt, idx=ind) + 
-       plants_no_growth + #EGN_sine +
+       plants_no_growth + 
        (1|i|ID)) +
   # change in red morph frequency (aphid evo dynamics)
-  bf(Rt1|subset(Freq_sub) ~ #mi(se_Rt) + subset(Freq_sub) + index(ind) ~   
+  bf(Rt1|subset(Freq_sub) ~   
        0 + Intercept + mi(Rt, idx=ind) + mi(Yt, idx=ind) + mi(lnAt, idx=ind) +  
        ptoid_in + ptoid_in:(mi(Rt, idx=ind) + mi(Yt, idx=ind) + mi(lnAt, idx=ind) + mi(lnPt, idx=ind)) +
-       plants_no_growth + #EGN_sine +
+       plants_no_growth + 
        (1|i|ID)) +
   # change in yellow morph frequency (aphid evo dynamics)
-  bf(Yt1|subset(Freq_sub) ~ #mi(se_Yt) + subset(Freq_sub) + index(ind) ~  
+  bf(Yt1|subset(Freq_sub) ~  
        0 + Intercept + mi(Yt, idx=ind) + mi(Rt, idx=ind) + mi(lnAt, idx=ind) +  
        ptoid_in + ptoid_in:(mi(Yt, idx=ind) + mi(Rt, idx=ind) + mi(lnAt, idx=ind) + mi(lnPt, idx=ind)) +
-       plants_no_growth + #EGN_sine +
+       plants_no_growth + 
        (1|i|ID)) +
   # measurement error
   bf(lnAt|mi(se_lnAt) + index(ind) ~ 1 + (1|i|ID)) +  
