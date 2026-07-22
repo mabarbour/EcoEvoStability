@@ -22,14 +22,17 @@ This repository contains the data and code to reproduce the analyses reported in
 
 -   **README.md -** Summary of GitHub repository.
 
-## R (version 4.4.1) packages used:
+## R (version 4.5.3) packages used:
 
 -   tidyverse 2.0.0
--   cowplot 1.1.3
--   patchwork 1.2.0
--   brms 2.22.0
--   lmerTest 3.1-3
--   tidybayes 3.0.6
--   marginaleffects 0.23.0
--   rgl 1.3.1
--   matlib 0.9.8
+-   cowplot 1.2.0
+-   patchwork 1.3.2
+-   brms 2.23.0
+-   lmerTest 3.2-1
+-   tidybayes 3.0.7
+-   marginaleffects 0.32.0
+-   rgl 1.3.36
+-   matlib 1.0.1
+-   mgcv 1.9-4
+-   gratia 0.11.2
+-   glmmTMB 1.1.14
